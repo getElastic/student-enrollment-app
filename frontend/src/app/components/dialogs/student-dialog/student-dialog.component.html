@@ -1,0 +1,28 @@
+<div class="container">
+  <h3 mat-dialog-title *ngIf="flag == 1">Add new student</h3>
+
+  <form class="mat-dialog-content" #formControl="ngForm">
+    <div class="form">
+      <mat-form-field>
+        <input matInput required placeholder="First name" [(ngModel)]="data.firstName" name="firstName" [disabled]="flag == 3">
+      </mat-form-field>
+    </div>
+
+    <div class="form">
+      <mat-form-field>
+        <input matInput required placeholder="Last name" [(ngModel)]="data.lastName" name="lastName" [disabled]="flag == 3">
+      </mat-form-field>
+    </div>
+
+    <div class="form">
+      <mat-form-field>
+        <input matInput required placeholder="Index number" [(ngModel)]="data.indexNumber" name="indexNumber" [disabled]="flag == 3">
+      </mat-form-field>
+    </div>
+
+    <div mat-dialog-actions>
+      <button mat-flat-button color="primary" *ngIf="flag == 1" [type]="submit" [disabled]="!formControl.valid" [mat-dialog-close]="1"
+        (click)="add()">Save</button>
+    </div>
+  </form>
+</div>

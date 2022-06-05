@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: Neuronuser
+Build-Jdk: 17.0.2
+Implementation-Title: StudentEnrollmentApplication
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.demo
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/angular-spring
+Created-By: Maven Integration for Eclipse
+
